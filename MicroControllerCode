@@ -1,0 +1,18 @@
+
+
+#define triac 3 int adc= 0;
+void setup() {
+pinMode (AO, INPUT);
+pinMode (triacpulse, OUTPUT);
+}
+void loop() {
+int
+}
+sensorValue-analogRead (A0);
+adc-75* sensorValue;
+attachInterrupt (0, acon, FALLING);
+void acon () {
+delayMicroseconds (adc);
+digitalWrite(triac,HIGH);
+delayMicroseconds (10) ; digitalWrite(triac, LOW);
+}
